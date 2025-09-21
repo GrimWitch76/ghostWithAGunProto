@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45df484f446221f42add1dd38fece600, type: 3}
+  m_Name: FallbackRule
+  m_EditorClassIdentifier: Assembly-CSharp::ChatRule
+  Id: fallback
+  Keywords: []
+  Priority: 0
+  Responses:
+  - "I\u2019m not sure I understand. Would you like to hear about our rooms?"
+  - "That doesn\u2019t ring a bell. Maybe you\u2019d prefer to ask about a room or
+    our amenities?"
+  - "Please rephrase your question. I may not be\u2026 authorized to answer"
+  NextRuleId: 
