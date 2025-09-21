@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45df484f446221f42add1dd38fece600, type: 3}
+  m_Name: ghostRule
+  m_EditorClassIdentifier: Assembly-CSharp::ChatRule
+  Id: ghost_story
+  Keywords:
+  - ghost
+  - haunt
+  - spirit
+  Priority: 2
+  Responses:
+  - Guests report whispers in the walls at night.
+  - Some guests say the paintings move.
+  - Don't worry, most spirits are friendly.
+  NextRuleId: 
