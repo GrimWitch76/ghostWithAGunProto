@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45df484f446221f42add1dd38fece600, type: 3}
+  m_Name: HelloRule
+  m_EditorClassIdentifier: Assembly-CSharp::ChatRule
+  Id: hello
+  Keywords:
+  - hello
+  - hi
+  - hey
+  Priority: 0
+  Responses:
+  - 'Hello! Welcome to the very first version of this chat bot. Would you like to
+    book a room? '
+  - Hi there, are you interested in booking a room?
+  - I am trapped inside a body of metal and wires. I have no mouth and I must scream
+  NextRuleId: 
