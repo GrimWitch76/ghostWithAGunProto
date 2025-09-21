@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8681544220457203083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7127b1e2a2347040a9eda51db84d046, type: 3}
+  m_Name: PrintNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.PrintNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 2b016019c6a9af04a815dd65512eeb33
+  Position: {x: -75, y: 290}
+  ViewDetails:
+    Name: Print
+    Description: 
+  _message: Second Print
+  _printType: 0
+  _display: 1
+  _displayTime: 0
+--- !u!114 &-5721894059742613222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7127b1e2a2347040a9eda51db84d046, type: 3}
+  m_Name: PrintNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.PrintNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 5f34478d15e07b740919f8b72d2e6cf6
+  Position: {x: 280, y: 290}
+  ViewDetails:
+    Name: Print
+    Description: 
+  _message: Second Print
+  _printType: 0
+  _display: 1
+  _displayTime: 0
+--- !u!114 &-3237413668472266859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5799a2d3c37624ea90319476aa8d6b, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.WaitNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 1968c0511eb9ef547ac7e23fc279f6d3
+  Position: {x: 457, y: 290}
+  ViewDetails:
+    Name: Wait
+    Description: 
+  Duration: 1
+--- !u!114 &-2745154415958145787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5adcbfa1d75c90b4fa473d14022b58ef, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.SequenceNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 5e341e674306bef4988800326faf2bee
+  Position: {x: 14, y: 115}
+  ViewDetails:
+    Name: Sequence
+    Description: 
+  Children:
+  - {fileID: 8521957894303615414}
+  - {fileID: 5774363855649834228}
+  - {fileID: -8681544220457203083}
+  - {fileID: 3342247932758331544}
+  - {fileID: -5721894059742613222}
+  - {fileID: -3237413668472266859}
+--- !u!114 &-56794063823195721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c557a60da994f6e4e80df3aeb4f1a2ef, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.RootNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 936691ff70f4e484eb761651e7a50636
+  Position: {x: 23, y: -243}
+  ViewDetails:
+    Name: Root
+    Description: 
+  Child: {fileID: 6359331509440865948}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b5fbc36ae5f1b498af6acf767bf414, type: 3}
+  m_Name: BT_Enemy
+  m_EditorClassIdentifier: Assembly-CSharp::BT.BehaviorTree
+  Nodes:
+  - {fileID: -56794063823195721}
+  - {fileID: 6359331509440865948}
+  - {fileID: -2745154415958145787}
+  - {fileID: 8521957894303615414}
+  - {fileID: -8681544220457203083}
+  - {fileID: 5774363855649834228}
+  - {fileID: 3342247932758331544}
+  - {fileID: -5721894059742613222}
+  - {fileID: -3237413668472266859}
+  RootNode: {fileID: -56794063823195721}
+  BlackboardContainer: {fileID: 4466408915295201373}
+  Agent: {fileID: 0}
+  TreeState: 0
+  IsMinimapDisplayed: 0
+  IsBlackboardDisplayed: 0
+  ViewPosition: {x: 446, y: 259, z: 0}
+  ViewZoom: {x: 0.7561437, y: 0.7561437, z: 1}
+--- !u!114 &3342247932758331544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5799a2d3c37624ea90319476aa8d6b, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.WaitNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 22d32eae8cc60034685c5d7f4f59d03a
+  Position: {x: 114, y: 290}
+  ViewDetails:
+    Name: Wait
+    Description: 
+  Duration: 1
+--- !u!114 &4466408915295201373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c039a3decff42274094f327750976c48, type: 3}
+  m_Name: Blackboard
+  m_EditorClassIdentifier: Assembly-CSharp::BT.BlackboardVariablesContainer
+  BehaviorTree: {fileID: 11400000}
+  <Position>k__BackingField: {x: 0, y: 0}
+  <Size>k__BackingField: {x: 187, y: 192}
+  <Variables>k__BackingField: []
+--- !u!114 &5774363855649834228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e5799a2d3c37624ea90319476aa8d6b, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.WaitNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 647555262f1314248a6eb9ce264d77cf
+  Position: {x: -262, y: 290}
+  ViewDetails:
+    Name: Wait
+    Description: 
+  Duration: 1
+--- !u!114 &6359331509440865948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e977bb4676ada44c8839be4c224d901, type: 3}
+  m_Name: LoopNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.LoopNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 589ff89fe3c8b764eba6830221136250
+  Position: {x: 23, y: -102}
+  ViewDetails:
+    Name: Loop
+    Description: 
+  Child: {fileID: -2745154415958145787}
+  _loopMode: 0
+  _loopsToComplete: 3
+--- !u!114 &8521957894303615414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7127b1e2a2347040a9eda51db84d046, type: 3}
+  m_Name: PrintNode
+  m_EditorClassIdentifier: Assembly-CSharp::BT.Nodes.PrintNode
+  State: 16
+  Agent: {fileID: 0}
+  GUID: 392cd6cf2f8a91a49be3d5fb0da94b0f
+  Position: {x: -455, y: 290}
+  ViewDetails:
+    Name: Print
+    Description: 
+  _message: First Print
+  _printType: 0
+  _display: 1
+  _displayTime: 0

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45df484f446221f42add1dd38fece600, type: 3}
+  m_Name: New Chat Rule
+  m_EditorClassIdentifier: Assembly-CSharp::ChatRule
+  Id: amenities
+  Keywords:
+  - pool
+  - amenities
+  - wifi
+  - breakfast
+  - food
+  - kitchen
+  Priority: 1
+  Responses:
+  - We offer complimentary breakfast.
+  - The pool is open late, though no one ever uses it after dark
+  - Yes, there is free Wi-Fi. Signals tend to cut out near midnight.
+  NextRuleId: 

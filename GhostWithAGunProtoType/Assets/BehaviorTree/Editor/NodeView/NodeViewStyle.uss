@@ -1,0 +1,235 @@
+:root {
+    --selection-normal-border-width: 2px;
+    --selection-highlighted-border-width: 4px;
+    --border-selection-color: rgb(255, 171, 0);
+    --port-color: rgb(27, 150, 27);
+    --disabled-port-color: rgb(0, 0, 0);
+}
+
+.port > #connector > #cap {
+    background-color: rgb(200, 100, 50);
+}
+
+.unity-port__cap {
+    background-color: rgb(255, 0, 0);
+}
+
+.unity-port__connector {
+    background-color: rgb(0, 255, 0);
+}
+
+#node-border {
+    background-color: rgb(56, 56, 56);
+    border-left-color: rgb(40, 40, 40);
+    border-right-color: rgb(40, 40, 40);
+    border-top-color: rgb(40, 40, 40);
+    border-bottom-color: rgb(40, 40, 40);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#selection-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-left-color: rgb(29, 29, 29);
+    border-right-color: rgb(29, 29, 29);
+    border-top-color: rgb(29, 29, 29);
+    border-bottom-color: rgb(29, 29, 29);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+:hover > #selection-border {
+    border-top-width: var(--selection-normal-border-width);
+    border-right-width: var(--selection-normal-border-width);
+    border-bottom-width: var(--selection-normal-border-width);
+    border-left-width: var(--selection-normal-border-width);
+    border-left-color: var(--border-selection-color);
+    border-right-color: var(--border-selection-color);
+    border-top-color: var(--border-selection-color);
+    border-bottom-color: var(--border-selection-color);
+    transition-duration: 0.1s;
+}
+
+:selected > #selection-border {
+    border-top-width: var(--selection-normal-border-width);
+    border-right-width: var(--selection-normal-border-width);
+    border-bottom-width: var(--selection-normal-border-width);
+    border-left-width: var(--selection-normal-border-width);
+    border-left-color: var(--border-selection-color);
+    border-right-color: var(--border-selection-color);
+    border-top-color: var(--border-selection-color);
+    border-bottom-color: var(--border-selection-color);
+    transition-duration: 0.1s;
+}
+
+:hover:selected > #selection-border {
+    border-top-width: var(--selection-highlighted-border-width);
+    border-right-width: var(--selection-highlighted-border-width);
+    border-bottom-width: var(--selection-highlighted-border-width);
+    border-left-width: var(--selection-highlighted-border-width);
+    border-left-color: var(--border-selection-color);
+    border-right-color: var(--border-selection-color);
+    border-top-color: var(--border-selection-color);
+    border-bottom-color: var(--border-selection-color);
+    margin-top: -2px;
+    margin-right: -2px;
+    margin-bottom: -2px;
+    margin-left: -2px;
+    transition-duration: 0.1s;
+}
+
+.node {
+    max-width: none;
+    min-width: auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#divider {
+    min-height: 1px;
+    background-color: rgb(41, 41, 41);
+}
+
+#node-state {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+.action {
+    background-image: url("project://database/Assets/BehaviorTree/Icons/T_Gradient_Purple.png?fileID=2800000&guid=46b707df99afb9e4a8855e6eb33509d0&type=3#T_Gradient_Purple");
+}
+
+.root {
+    background-image: url("project://database/Assets/BehaviorTree/Icons/T_Gradient_Gray.png?fileID=21300000&guid=8be8a10f82e746a499b17e2f3ae8e2c6&type=3#T_Gradient_Gray");
+}
+
+.composite {
+    background-image: url("project://database/Assets/BehaviorTree/Icons/T_Gradient_Gray.png?fileID=21300000&guid=8be8a10f82e746a499b17e2f3ae8e2c6&type=3#T_Gradient_Gray");
+}
+
+.decorator {
+    background-image: url("project://database/Assets/BehaviorTree/Icons/T_Gradient_Gray.png?fileID=21300000&guid=8be8a10f82e746a499b17e2f3ae8e2c6&type=3#T_Gradient_Gray");
+}
+
+.not-running #node-state {
+    background-color: rgb(255, 155, 0);
+    border-left-color: rgb(255, 155, 0);
+    border-right-color: rgb(255, 155, 0);
+    border-top-color: rgb(255, 155, 0);
+    border-bottom-color: rgb(255, 155, 0);
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition-duration: 0.1s;
+    display: flex;
+    visibility: visible;
+    overflow: visible;
+}
+
+.running #node-state {
+    background-color: rgb(255, 155, 0);
+    border-left-color: rgb(255, 155, 0);
+    border-right-color: rgb(255, 155, 0);
+    border-top-color: rgb(255, 155, 0);
+    border-bottom-color: rgb(255, 155, 0);
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition-duration: 0.1s;
+    display: flex;
+    visibility: visible;
+    overflow: visible;
+}
+
+.failure #node-state {
+    background-color: rgb(255, 0, 23);
+    border-left-color: rgb(255, 0, 23);
+    border-right-color: rgb(255, 0, 23);
+    border-top-color: rgb(255, 0, 23);
+    border-bottom-color: rgb(255, 0, 23);
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition-duration: 0.1s;
+    display: flex;
+    visibility: visible;
+    overflow: visible;
+}
+
+.success #node-state {
+    background-color: rgb(69, 255, 0);
+    border-left-color: rgb(69, 255, 0);
+    border-right-color: rgb(69, 255, 0);
+    border-top-color: rgb(69, 255, 0);
+    border-bottom-color: rgb(69, 255, 0);
+    border-top-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition-duration: 0.1s;
+    display: flex;
+    visibility: visible;
+    overflow: visible;
+}
+
+#center-parent {
+    -unity-flex-direction: row;
+    align-items: auto;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}

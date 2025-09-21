@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e825e8e98ade0439bb6e2dab5f9143, type: 3}
+  m_Name: BasicChatbotDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::ChatDatabase
+  Rules:
+  - {fileID: 11400000, guid: f7c97de18f5036549b95bad9f79bd709, type: 2}
+  - {fileID: 11400000, guid: 299d6d163ad2e9b42bb184db7928a220, type: 2}
+  - {fileID: 11400000, guid: 195e042c6c30a8c46a9ebe6d70dc37da, type: 2}
+  - {fileID: 11400000, guid: 87ccb875dc1ff6b48a76031ed03cad16, type: 2}
+  - {fileID: 11400000, guid: 9cfa9c785d73ddc4d88bb101bf15523d, type: 2}
+  - {fileID: 11400000, guid: f6a9ae3976c72774e9fddc40521abd2c, type: 2}
